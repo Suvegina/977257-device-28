@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Каталог товаров Девайс</title>
@@ -28,6 +28,7 @@
       </div>
       <div>
         <a href="catalog.html">Каталог товаров</a>
+        <!-- Выпадающее меню 2-го уровня -->
         <ul>
           <li><a href="blank.html">Виртуальная реальность</a></li>
           <li><a href="catalog.html">Моноподы для селфи</a></li>
@@ -47,7 +48,7 @@
   </header>
   <main>
     <h1>Моноподы для селфи</h1>
-    <ul>
+    <ul aria-label="Навигация по сайту">
       <li><a href="index.html">Главная</a></li>
       <li><a href="blank.html">Каталог товаров</a></li>
       <li>Моноподы для селфи</li>
@@ -55,17 +56,45 @@
     <section>
       <h2>Фильтры товаров</h2>
       <!-- Здесь будет располагаться форма с фильтром -->
-      <form>
+      <form action="htpps://echo.htmlacademy.ru" method="post">
         <fieldset>
           <legend>Стоимость</legend>
         </fieldset>
         <fieldset>
           <legend>Цвет</legend>
+          <p>
+            <input type="checkbox" name="black" id="black-field" checked>
+            <label for="black-field">Черный</label>
+          </p>
+          <p>
+            <input type="checkbox" name="white" id="white-field">
+            <label for="white-field">Белый</label>
+          </p>
+          <p>
+            <input type="checkbox" name="blue" id="blue-field"checked>
+            <label for="blue-field">Синий</label>
+          </p>
+          <p>
+            <input type="checkbox" name="red" id="red-field"checked>
+            <label for="red-field">Красный</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pink" id="pink-field">
+            <label for="pink-field">Розовый</label>
+          </p>
         </fieldset>
         <fieldset>
           <legend>Bluetooth</legend>
+          <p>
+            <input type="radio" name="blue-tooth" id="bluetooth" aria-label="Поддерживает технологию Блютуз" checked>
+            <label for="bluetooth">Есть</label>
+          </p>
+          <p>
+            <input type="radio" name="blue-tooth" id="no-bluetooth" aria-label="Не поддерживает технологию Блютуз">
+            <label for="no-bluetooth">Нет</label>
+          </p>
         </fieldset>
-        <button>Показать</button>
+        <button type="submit">Показать</button>
       </form>
     </section>
     <div>
@@ -98,7 +127,7 @@
             </a>
             <div>
               <button>В корзину</button>
-              <p>Добавить к сравнению</p>
+              <button>Добавить к сравнению</button>
             </div>
           </li>
           <li>
@@ -109,7 +138,7 @@
             </a>
             <div>
               <button>В корзину</button>
-              <p>Добавить к сравнению</p>
+              <button>Добавить к сравнению</button>
             </div>
           </li>
           <li>
@@ -120,7 +149,7 @@
             </a>
             <div>
               <button>В корзину</button>
-              <p>Добавить к сравнению</p>
+              <button>Добавить к сравнению</button>
             </div>
           </li>
           <li>
@@ -131,19 +160,19 @@
             </a>
             <div>
               <button>В корзину</button>
-              <p>Добавить к сравнению</p>
+              <button>Добавить к сравнению</button>
             </div>
           </li>
         </ul>
         <div>
-          <h2>Пагинация страниц</h2>
-          <a href="blank.html">Назад</a>
+          <h2 class="visually-hidden">Пагинация страниц</h2>
+          <a href="blank.html" aria-label="Переход на страницу">Назад</a>
           <ul>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
+            <li><a href="#" aria-label="Переход на страницу">1</a></li>
+            <li><a href="#" aria-label="Переход на страницу">2</a></li>
+            <li><a href="#" aria-label="Переход на страницу">3</a></li>
           </ul>
-          <a href="blank.html">Вперед</a>
+          <a href="blank.html" aria-label="Переход на страницу">Вперед</a>
         </div>
       </section>
     </div>
@@ -198,11 +227,12 @@
           <rect x="0" y="0" width="80" height="7" style="fill:#ffc600"></rect>
         </svg>
         <ul>
-          <li><a href="https://www.facebook.com">Фейсбук</a></li>
-          <li><a href="https://www.instagram.com">Инстаграм</a></li>
-          <li><a href="https://twitter.com">Твиттер</a></li>
+          <li><a href="https://www.facebook.com" aria-label="Сообщество покупателей и ценителей интернет-магазина Девайс в Фейсбук"></a></li>
+          <li><a href="https://www.instagram.com" aria-label="Официальный аккаунт интернет-магазина Девайс в Инстаграм"></a></li>
+          <li><a href="https://twitter.com" aria-label="Публичная страница интернет-магазина Девайс в Твиттер"></a></li>
         </ul>
         <p>
+          <b class="visually-hidden">Разработано</b>
           <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo-html.svg" alt="Html academy" width="27" height="34">
           </a>
