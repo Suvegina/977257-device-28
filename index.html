@@ -25,6 +25,7 @@
         </div>
         <div>
           <a href="catalog.html">Каталог товаров</a>
+          <!-- Выпадающее меню 2-го уровня -->
           <ul>
             <li><a href="blank.html">Виртуальная реальность</a></li>
             <li><a href="catalog.html">Моноподы для селфи</a></li>
@@ -43,10 +44,10 @@
       </nav>
     </header>
     <main>
-      <h1>Интернет-магазин Device</h1>
+      <h1 class="visually-hidden">Интернет-магазин Device</h1>
       <!-- Начало слайдера с рекомендациями -->
       <section>
-        <h2>Мы рекомендуем</h2>
+        <h2 class="visually-hidden">Мы рекомендуем</h2>
         <!-- Пагинация -->
         <input type="radio" name="slider" id="slide-1" checked>
         <input type="radio" name="slider" id="slide-2">
@@ -113,41 +114,41 @@
         </article>
       </section>
       <section> <!--Блок с популярными товарами-->
-        <h2>Каталог популярных товаров</h2>
+        <h2 class="visually-hidden">Каталог популярных товаров</h2>
         <ul>
           <li>
             <a href="blank.html">
-              <span><img src="img/ico-virtual-reality.svg" width="97" height="55" alt="Иконка виртуальной реальности"></span>
+              <span><img src="img/ico-virtual-reality.svg" width="97" height="55" alt="Товары в категории: Виртуальная реальность"></span>
               Виртуальная реальность
             </a>
           </li>
           <li>
             <a href="catalog.html">
-              <span><img src="img/ico-monopods.svg" width="86" height="117" alt="Иконка монопода"></span>
+              <span><img src="img/ico-monopods.svg" width="86" height="117" alt="Товары в категории: Моноподы для селфи"></span>
               Моноподы для селфи
             </a>
           </li>
           <li>
             <a href="blank.html">
-              <span><img src="img/ico-action-cameras.svg" width="71" height="87" alt="Иконка экшн-камер"></span>
+              <span><img src="img/ico-action-cameras.svg" width="71" height="87" alt="Товары в категории: Экшн-камеры"></span>
               Экшн-камеры
             </a>
           </li>
           <li>
             <a href="blank.html">
-              <span><img src="img/ico-fitness-bracelets.svg" width="107" height="65" alt="Иконка фитнес-браслета"></span>
+              <span><img src="img/ico-fitness-bracelets.svg" width="107" height="65" alt="Товары в категории: Фитнес-браслеты"></span>
               Фитнес-браслеты
             </a>
           </li>
           <li>
             <a href="blank.html">
-              <span><img src="img/ico-smartwatch.svg" width="56" height="98" alt="Иконка умных часов"></span>
+              <span><img src="img/ico-smartwatch.svg" width="56" height="98" alt="Товары в категории: Умные часы"></span>
               Умные часы
             </a>
           </li>
           <li>
             <a href="blank.html">
-              <span><img src="img/ico-quadcopters.svg" width="132" height="69" alt="Иконка квадрокоптера"></span>
+              <span><img src="img/ico-quadcopters.svg" width="132" height="69" alt="Товары в категории: Квадрокоптеры"></span>
               Квадрокоптер
             </a>
           </li>
@@ -155,36 +156,34 @@
       </section>
       <section>
         <div>
-          <h2>Сервис интернет-магазина</h2>
+          <h2 class="visually-hidden">Сервис интернет-магазина</h2>
           <input type="radio" name="service-controls" id="delivery" checked>
           <input type="radio" name="service-controls" id="warranty">
           <input type="radio" name="service-controls" id="credit">
           <div>
-            <ul>
-              <li><button>Доставка</button></li>
-              <li><button>Гарантия</button></li>
-              <li><button>Кредит</button></li>
-            </ul>
+            <label for="delivery">Доставка</label>
+            <label for="warranty">Гарантия</label>
+            <label for="credit">Кредит</label>
           </div>
           <div>
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            <img src="img/ico-delivery.svg" width="136" height="164" alt="Иконка доставки">
+            <!-- <img src="img/ico-delivery.svg" width="136" height="164" alt="Иконка доставки"> -->
           </div>
           <div>
             <h3>Гарантия</h3>
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-            <img src="img/warranty.svg" width="171" height="195" alt="Иконка гарантии">
+            <!-- <img src="img/warranty.svg" width="171" height="195" alt="Иконка гарантии"> -->
           </div>
           <div>
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-            <img src="img/credit.svg" width="156" height="188" alt="Иконка сервисного обслуживания">
+            <!-- <img src="img/credit.svg" width="156" height="188" alt="Иконка кредитования"> -->
           </div>
         </div>
       </section>
       <section>
-        <h2>Бренды</h2>
+        <h2 class="visually-hidden">Проверенные Бренды</h2>
         <ul>
           <li>
             <a href="https://www.dji.com">
@@ -229,7 +228,7 @@
         <section>
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <img src="img/map-preview.jpg" alt="Карта с расположением офиса">
+          <img src="img/map-preview.jpg" alt="Карта с расположением офиса, по адресу: улица строителей, 15">
           <a href="blank.html">Напишите нам</a>
         </section>
       </div>
@@ -281,11 +280,12 @@
             <rect x="0" y="0" width="80" height="7" style="fill:#ffc600"></rect>
           </svg>
           <ul>
-            <li><a href="https://www.facebook.com">Фейсбук</a></li>
-            <li><a href="https://www.instagram.com">Инстаграм</a></li>
-            <li><a href="https://twitter.com">Твиттер</a></li>
+            <li><a href="https://www.facebook.com" aria-label="Сообщество покупателей и ценителей интернет-магазина Девайс в Фейсбук"></a></li>
+            <li><a href="https://www.instagram.com" aria-label="Официальный аккаунт интернет-магазина Девайс в Инстаграм"></a></li>
+            <li><a href="https://twitter.com" aria-label="Публичная страница интернет-магазина Девайс в Твиттер"></a></li>
           </ul>
           <p>
+            <b class="visually-hidden">Разработано</b>
             <a href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/logo-html.svg" alt="Html academy" width="27" height="34">
             </a>
@@ -293,7 +293,40 @@
         </div>
       </nav>
     </footer>
-    <!-- Здесь будут находиться pop-up формы -->
-    <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p> -->
+    <!-- Pop-up с формой -->
+    <section>
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <button>
+        <img src="img/modal-close.svg" height="55" width="55" alt="Закрыть">
+      </button>
+      <form action="htpps://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="name">Ваше имя:</label>
+          <input type="text" name="name-surname" id="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="mail">Ваш e-mail:</label>
+          <input type="email" name="e-mail" id="mail" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="text">Текст письма:</label>
+          <textarea name="letter" id="text" minlength="10" placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+    <!-- pop-up с картой -->
+    <section>
+      <h2 class="visually-hidden">Расположение офиса на карте</h2>
+      <button>
+        <img src="img/modal-close.svg" height="55" width="55" alt="Закрыть">
+      </button>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374952835!2d37.52742395129263!3d55.68703400443474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1591996721224!5m2!1sru!2sru"
+        width="960"
+        height="560"
+        style="border:none;"
+        allowfullscreen>
+      </iframe>
+    </section>
   </body>
 </html>
