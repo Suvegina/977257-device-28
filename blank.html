@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
@@ -25,6 +25,7 @@
       </div>
       <div>
         <a href="catalog.html">Каталог товаров</a>
+        <!-- Выпадающее меню 2-го уровня -->
         <ul>
           <li><a href="blank.html">Виртуальная реальность</a></li>
           <li><a href="catalog.html">Моноподы для селфи</a></li>
@@ -47,8 +48,8 @@
       <h1>Запрашиваемая страница не найдена</h1>
       <img src="img/not-found-page.jpg" alt="Страница находится на стадии разработки. Но это не точно" width="895" height="315">
       <div>
-        <a href="index.html">На главную</a>
-        <a href="catalog.html">В каталог</a>
+        <a href="index.html" aria-label="Перейти">На главную</a>
+        <a href="catalog.html" aria-label="Перейти">В каталог</a>
       </div>
     </section>
   </main>
@@ -105,11 +106,12 @@
           <rect x="0" y="0" width="80" height="7" style="fill:#ffc600"></rect>
         </svg>
         <ul>
-          <li><a href="https://www.facebook.com">Фейсбук</a></li>
-          <li><a href="https://www.instagram.com">Инстаграм</a></li>
-          <li><a href="https://twitter.com">Твиттер</a></li>
+          <li><a href="https://www.facebook.com" aria-label="Сообщество покупателей и ценителей интернет-магазина Девайс в Фейсбук"></a></li>
+          <li><a href="https://www.instagram.com" aria-label="Официальный аккаунт интернет-магазина Девайс в Инстаграм"></a></li>
+          <li><a href="https://twitter.com" aria-label="Публичная страница интернет-магазина Девайс в Твиттер"></a></li>
         </ul>
         <p>
+          <b class="visually-hidden">Разработано</b>
           <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo-html.svg" alt="Html academy" width="27" height="34">
           </a>
