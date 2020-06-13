@@ -59,6 +59,21 @@
       <form action="htpps://echo.htmlacademy.ru" method="post">
         <fieldset>
           <legend>Стоимость</legend>
+          <div><!--Общая обёртка-->
+            <div><!--Обёртка ползунка-->
+              <div><!--Контейнер для ценовой полосы -->
+                <div><!--Выделенная ценовая область--></div>
+              </div>
+              <div><!--Левая псевдокнопка ползунка--></div>
+              <div><!--Правая псевдокнопка ползунка--></div>
+            </div>
+            <div><!--Обёртка отображения цен "от" и "до"-->
+              <label for="min-price">от</label>
+              <input id="min-price" type="number" name="min-price" placeholder="0" disabled>
+              <label for="max-price">до</label>
+              <input id="max-price" type="number" name="max-price" placeholder="5000" disabled>
+            </div>
+          </div>
         </fieldset>
         <fieldset>
           <legend>Цвет</legend>
